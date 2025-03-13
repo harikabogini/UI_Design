@@ -1,37 +1,20 @@
-import 'dart:io';
+import ' dart: io';
 void main()
 {
 	print("enter the a value");
-	var a =int.parse( stdin.readLineSync()!);
+	int a =int.parse( stdin.readLineSync()!);
 	print("enter the b value");
-	var b = int.parse(stdin.readLineSync()!);
-	
-	 sum(a,b);
-	 sub(a,b);
-	 div(a,b);
-	 mul(a,b);
+	int b = int.parse(stdin.readLineSync()!);
+	biggest(a,b);
 }
-void sum(int int num1,num2)
+void biggest(int a, int b)
 {
-	
-	print('the addtion of number is:');
-	print(num1+num2);
-} 
-void sub(int num1,num2)
-{
-	
-	print('the subtraction of number is:');
-	print(num1-num2);
-}
-void div(int num1,num2)
-{
-	
-	print('the division of number is:');
-	print(num1/num2);
-}
-void mul(int num1,num2)
-{
-	
-	print('the multiplication of number is:');
-	print(num1*num2);
+	if(a<b)
+	{
+		stdin.write('the big number is :$(a)');
+	}
+	else
+	{
+		stdin.write('the big number is :$(b)');
+	}
 }
